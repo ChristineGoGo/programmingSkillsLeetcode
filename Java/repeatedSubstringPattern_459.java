@@ -7,6 +7,7 @@ public class repeatedSubstringPattern_459 {
      * Input: s = "abab"
      * Output: true
      * Explanation: It is the substring "ab" twice.
+     * APPROACH: Use KPM Algorithm to solve the problem
      */
 
     public boolean repeatedSubStringPattern(String s) {
