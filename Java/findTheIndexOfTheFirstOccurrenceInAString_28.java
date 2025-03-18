@@ -12,19 +12,12 @@ public class findTheIndexOfTheFirstOccurrenceInAString_28 {
      *      Output: -1
      *      Explanation: "leeto" did not occur in "leetcode", so we return -1.
      * 
-     * APPROACH: Pattern matching search
+     * APPROACH: Pattern matching search with two pointers
      */
 
      public static int strStr(String haystack, String needle) {
-        if (haystack.length() == 1 && needle.length() == 1) {
-            if (haystack.charAt(0) == needle.charAt(0)) {
-                return 0;
-            }
-        }
         for (int i = 0; i <= haystack.length() - needle.length(); i++) {
             int j = 0;
-         
-
             while ( j < needle.length() && haystack.charAt(i + j) == needle.charAt(j)) {
                 // System.out.println(j);
                 j++;
