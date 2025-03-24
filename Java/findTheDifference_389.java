@@ -21,5 +21,4 @@ public class findTheDifference_389 {
         char ans = t.charAt(s.length());
         return ans;
     }
-    }
 }
